@@ -4,12 +4,7 @@ import { Provider } from 'react-redux';
 import { useState, Component } from "react";
 import configureStore from './Store/configureStore';
 import { combineReducers } from "redux";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
 import Content from './Content/Content.jsx'
 // import UploadTranscript from './Components/UploadTranscript/UploadTranscript.jsx'
 import SitePage from './Components/SitePage/SitePage.jsx'
@@ -26,19 +21,11 @@ const MySwal = withReactContent(Swal)
 const store = configureStore({
 });
 function Container() {
-  const [sidebarOpen, setsidebarOpen] = useState(false);
-  const openSidebar = () => {
-    setsidebarOpen(true);
-  };
-  const closeSidebar = () => {
-    setsidebarOpen(false);
-  };
   return (
     <Provider store={store}>
    <div className={style["container"]}>
-      <NavBar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
-      <Content />
-      <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
+      <NavBar  />
+    <Content />
     </div>
     </Provider>
   );
@@ -62,19 +49,9 @@ class App extends Component {
   }
  render(){
   return (
-    <Router>
     <Provider store={store}>
-    <Switch>
-     <Route path="*/id:*">
-          <Container />
-    </Route>
-      <Route path="/">
-        {console.log(SitePage)}
-            <SitePage />
-      </Route>
-    </Switch>
+      <Container/>
     </Provider>
-    </Router>
   );
  }
 }
