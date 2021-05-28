@@ -1,0 +1,60 @@
+.summaryList{
+    /* width: 100%; */
+    /* text-align: center; */
+  
+    vertical-align: middle;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actionTab{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.actionTab>div{
+    margin-right: 5px;
+}
+.iconDiv:hover{
+   color: #2568c3;
+}
+.clickMe{
+    background-color: #cde4f7;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 4px;
+    cursor: pointer;
+}
+.CellLine{
+    background-color: #F5F7FE;
+    padding: 1%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.cellList{
+    margin-top:20px ;
+}
+.oneLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.noAgendaDiv{
+    text-align: center;
+    padding: 1%;
+    cursor: pointer;
+}
+.iconDiv{
+    margin: 10px 10px 0px 10px;
+    text-align: end;
+    cursor: pointer;
+}
+.textAreaCss{
+    font-size: larger;
+    margin: 0 10px 10px 10px;
+}

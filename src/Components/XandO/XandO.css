@@ -1,0 +1,71 @@
+
+  .pointer{
+      cursor: pointer;
+  }
+  .cellStyle{
+    border: 2px solid white;
+    width:100px;
+    height:100px;
+    color: white;
+     display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;  
+    font-size: xxx-large;   
+    font-family: 'Press Start 2P', cursive;
+}
+  .winningCells{
+    border: 2px solid gold;
+  }
+  .rowStyle{
+    display:flex;
+    flex-direction: row;
+  }
+  .gamespace{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+  }
+  .gridspace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .currentPlayer{
+    height: 60px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: -2px 0 0 #fdff2a,
+      -4px 0 0 #df4a42,
+      2px 0 0 #91fcfe,
+      4px 0 0 #4405fc;
+      animation: blink 1s steps(4, start) infinite;
+    }
+    @-moz-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-o-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    
