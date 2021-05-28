@@ -1,1 +1,1 @@
-This is code for the breviz project
+This is a React Game
