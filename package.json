@@ -90,7 +90,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js && mv -f build/* ./",
+    "build": "node scripts/build.js && rm -rf images && rm -rf static && mv -f build/* ./",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
